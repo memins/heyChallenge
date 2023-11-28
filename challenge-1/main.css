@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+}
+.nav {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+a.active {
+  border-bottom: 2px solid #1b10b7;
+}
+.my-checkbox {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  border-radius: 6px;
+}
+
+.hidden {
+  width: 0;
+  opacity: 0;
+  height: 0;
+}
+
+.my-checkbox svg {
+  width: 100%;
+  height: 100%;
+}
+
+.my-checkbox svg polyline {
+  visibility: hidden;
+}
+
+input[type="checkbox"]:checked + .my-checkbox svg polyline {
+  stroke: white;
+  visibility: visible;
+}
+
+input[type="checkbox"]:checked + .my-checkbox {
+  visibility: visible;
+  background-color: black;
+}
+
+input[type="checkbox"]:focus + .my-checkbox {
+  outline: 2px solid #1b10b7;
+  outline-offset: 1px;
+}
