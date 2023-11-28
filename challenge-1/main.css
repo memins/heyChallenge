@@ -24,6 +24,7 @@ a.active {
   height: 30px;
   border: 1px solid #000;
   border-radius: 6px;
+  margin-top: 5px;
 }
 
 .hidden {
